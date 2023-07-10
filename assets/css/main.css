@@ -18,7 +18,7 @@
 		font: inherit;
 		vertical-align: baseline;
 	}
-
+	
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
@@ -2197,6 +2197,9 @@
 
 /* Form */
 
+	.grecaptcha-badge { visibility: visible; }
+	form #website{ display:none; }
+
 	form {
 		margin: 0 0 2em 0;
 	}
@@ -3783,14 +3786,6 @@
 	}
 
 		#banner:before {
-			-moz-transition: opacity 3s ease;
-			-webkit-transition: opacity 3s ease;
-			-ms-transition: opacity 3s ease;
-			transition: opacity 3s ease;
-			-moz-transition-delay: 1.25s;
-			-webkit-transition-delay: 1.25s;
-			-ms-transition-delay: 1.25s;
-			transition-delay: 1.25s;
 			content: '';
 			display: block;
 			background-color: #000;

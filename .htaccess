@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} !=443
+RewriteRule ^(.*)$ https://selectallservices.com/$1 [R=301,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (.*) /errordocument.html
+
+ErrorDocument 400 /errordocument.html
+ErrorDocument 401 /errordocument.html
+ErrorDocument 403 /errordocument.html
+ErrorDocument 404 /error404.html
+ErrorDocument 500 /error500.html
